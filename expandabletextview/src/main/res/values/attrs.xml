@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="contentTextSize" format="dimension"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="expandText" format="string"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="collapseText" format="string"/>
+        <attr name="expandCollapseTextColor" format="color"/>
+        <attr name="DrawableAndTextGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

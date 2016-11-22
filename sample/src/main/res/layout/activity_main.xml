@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="me.chensir.expandabletextview.sample.MainActivity">
+
+    <me.chensir.expandabletextview.ExpandableTextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentTextColor="@color/colorPrimary"
+        app:maxCollapsedLines="4">
+
+    </me.chensir.expandabletextview.ExpandableTextView>
+
+    <me.chensir.expandabletextview.ExpandableTextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:maxCollapsedLines="4">
+
+    </me.chensir.expandabletextview.ExpandableTextView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="8dp"
+        android:text="list sample"
+        android:textSize="24sp"/>
+
+</LinearLayout>
