@@ -322,7 +322,7 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
         if (mStateTvGravity == STATE_TV_GRAVITY_LEFT) {
             params.gravity = Gravity.START;
         } else if (mStateTvGravity == STATE_TV_GRAVITY_CENTER) {
-            params.gravity = Gravity.CENTER_VERTICAL;
+            params.gravity = Gravity.CENTER_HORIZONTAL;
         } else if (mStateTvGravity == STATE_TV_GRAVITY_RIGHT) {
             params.gravity = Gravity.END;
         }

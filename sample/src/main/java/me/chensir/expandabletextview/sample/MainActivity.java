@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         ((ExpandableTextView) findViewById(R.id.tv)).setText(getString(R.string.dummy_text));
         ((ExpandableTextView) findViewById(R.id.tv2)).setText(getString(R.string.dummy_text));
+        ((ExpandableTextView) findViewById(R.id.tv3)).setText(getString(R.string.dummy_text));
 
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
