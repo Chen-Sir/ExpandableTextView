@@ -208,7 +208,7 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
 
         // Setup with optimistic case
         // i.e. Everything fits. No button needed
-        mStateTv.setVisibility(View.GONE);
+//         mStateTv.setVisibility(View.GONE);
         mTv.setMaxLines(Integer.MAX_VALUE);
 
         // Measure
