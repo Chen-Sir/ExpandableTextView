@@ -226,8 +226,8 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
         // button.
         if (mCollapsed) {
             mTv.setMaxLines(mMaxCollapsedLines);
-            mStateTv.setVisibility(View.VISIBLE);
         }
+        mStateTv.setVisibility(View.VISIBLE);
 
         // Re-measure with new setup
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
