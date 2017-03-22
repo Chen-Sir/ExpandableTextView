@@ -49,6 +49,7 @@ Also ,  you can optionally set the following attributes in your layout xml file
 - `collapseText`  Customize the text  for `collapseDrawable`
 - `expandCollapseTextColor`  Customize the text color for `expandText`  and `collapseText`
 - `DrawableAndTextGravity`  Customize the gravity of `expandDrawable`  and  `collapseDrawable`  below the content
+- `contentLineSpacingMultiplier`  Sets line spacing multiplier for the content text
 
 
 
