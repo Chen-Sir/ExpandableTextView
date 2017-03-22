@@ -5,6 +5,7 @@
         <attr name="animDuration" format="integer"/>
         <attr name="contentTextSize" format="dimension"/>
         <attr name="contentTextColor" format="color"/>
+        <attr name="contentLineSpacingMultiplier" format="float"/>
         <attr name="expandDrawable" format="reference"/>
         <attr name="expandText" format="string"/>
         <attr name="collapseDrawable" format="reference"/>
