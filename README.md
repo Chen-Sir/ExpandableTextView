@@ -1,6 +1,6 @@
 # ExpandableTextView
 
-**The project is no longer maintained!**
+<font size=8>The project is no longer maintained!</font>
 
 ExpandableTextView library is a similar copy of [ExpandableTextView](https://github.com/Manabu-GT/ExpandableTextView) by [Manabu Shimobe](https://github.com/Manabu-GT) , but change a little UI structure and improve the code to make it easier to use. 
 
