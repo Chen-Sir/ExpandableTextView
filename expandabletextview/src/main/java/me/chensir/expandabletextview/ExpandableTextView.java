@@ -30,6 +30,7 @@ import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.SparseBooleanArray;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -50,7 +51,7 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
     private static final int DEFAULT_ANIM_DURATION = 300;
 
     /* The default content text size*/
-    private static final float DEFAULT_CONTENT_TEXT_SIZE = 16;
+    private static final int DEFAULT_CONTENT_TEXT_SIZE = 16;
     private static final float DEFAULT_CONTENT_TEXT_LINE_SPACING_MULTIPLIER = 1.0f;
 
     private static final int STATE_TV_GRAVITY_LEFT = 0;
@@ -85,10 +86,10 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
 
     private int mAnimationDuration;
 
-    private float mContentTextSize;
+    private int mContentTextSize;
 
     private int mContentTextColor;
-    
+
     private float mContentLineSpacingMultiplier;
 
     private int mStateTextColor;
@@ -287,7 +288,7 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.ExpandableTextView);
         mMaxCollapsedLines = typedArray.getInt(R.styleable.ExpandableTextView_maxCollapsedLines, MAX_COLLAPSED_LINES);
         mAnimationDuration = typedArray.getInt(R.styleable.ExpandableTextView_animDuration, DEFAULT_ANIM_DURATION);
-        mContentTextSize = typedArray.getDimension(R.styleable.ExpandableTextView_contentTextSize, DEFAULT_CONTENT_TEXT_SIZE);
+        mContentTextSize = typedArray.getDimensionPixelSize(R.styleable.ExpandableTextView_contentTextSize, DEFAULT_CONTENT_TEXT_SIZE);
         mContentLineSpacingMultiplier = typedArray.getFloat(R.styleable.ExpandableTextView_contentLineSpacingMultiplier, DEFAULT_CONTENT_TEXT_LINE_SPACING_MULTIPLIER);
         mContentTextColor = typedArray.getColor(R.styleable.ExpandableTextView_contentTextColor, Color.BLACK);
 
@@ -319,7 +320,7 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
     private void findViews() {
         mTv = (TextView) findViewById(R.id.expandable_text);
         mTv.setTextColor(mContentTextColor);
-        mTv.setTextSize(mContentTextSize);
+        mTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, mContentTextSize);
         mTv.setLineSpacing(0, mContentLineSpacingMultiplier);
         mTv.setOnClickListener(this);
 
